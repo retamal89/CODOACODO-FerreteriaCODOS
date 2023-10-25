@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #bcbcbc;
+    font-size: 22px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #0e34a0;
+    font-weight: bold;
+    flex: 1;
+}
+
+.logo span {
+    color: #affc41;
+}
+
+.menu-paginas {
+    background-color: #c9c9c9;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-paginas ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-paginas ul li {
+    margin-right: 20px;
+}
+
+.menu-paginas a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    margin: 0 10px;
+}
+
+.menu-paginas a:hover {
+    color: #0e34a0;
+}
+
+.contenedor-galeria {
+    position: relative;
+}
+
+.imagen-fondo {
+    width: 100%;
+    padding-top: 75%;
+    background-image: url('./Images/inicio/Banner\ Ferreteria.png');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #7b7263;
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px; 
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.redes-sociales i {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .menu-paginas {
+        padding: 10px;
+    }
+
+    .menu-paginas ul li {
+        margin-right: 10px;
+    }
+
+    .menu-paginas a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .menu-paginas {
+        padding: 8px;
+    }
+
+    .menu-paginas ul li {
+        margin-right: 6px;
+    }
+
+    .menu-paginas a {
+        font-size: 10px;
+        margin: 0 3px;
+    }
+}

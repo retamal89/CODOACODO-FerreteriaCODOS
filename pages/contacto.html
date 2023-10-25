@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/ISOLOGO CODOS.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="main.js"></script>
+    <title>Ferreteria Codos - Inicio</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="isologo"><img src="../Images/Logo CODOS.png" alt="Logo de Ferreteria Codos" width="60" height="60" align="left"></div>
+        <div class="logo">Ferreteria <span>Codos</span></div>
+    </header>
+    <!-- Fin Header -->
+    <!-- Menú de páginas -->
+    <nav class="menu-paginas">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./historia.html">Historia</a></li>
+            <li><a href="./trabajosrealizados.html">Trabajos Realizados</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Fin Menú de páginas -->
+    <main>
+        <h1>Contacto</h1>
+        <section>
+            <h2>Envianos tu consulta</h2>
+            <form class="formulario" action="enviar.php" method="post" enctype="text/plain">
+                <ul>
+                    <li>
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre" required>
+                    </li>
+                    <li>
+                        <label for="">Apellido</label>
+                        <input type="text" placeholder="Ingrese su apellido" required>
+                    </li>
+                    <li>
+                        <label for="">E-Mail</label>
+                        <input type="email" placeholder="Ingrese su correo electronico" required>
+                    </li>
+                    <li>
+                        <label for="">Telefono</label>
+                        <input type="number" placeholder="Ingrese su telefono" required>
+                    </li>
+                    <li>
+                        <label for="">Consulta</label>
+                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+                    </li>
+                    <li>
+                    <input type="submit">
+                    <input type="reset" value="Borrar">
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <section>
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9424543992855!2d-58.59444182562833!3d-34.55501237297178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbc4afda962b%3A0x3478a5c2e4e32829!2sAv.%20Eva%20Per%C3%B3n%206731%2C%20B1655CZO%20Loma%20Hermosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1690784104147!5m2!1ses-419!2sar" width="600" height="300" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa del lugar"></iframe>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="redes-sociales">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <p id="dolar-value">Valor del dólar: <span id="dolar-amount">Cargando...</span></p>
+            <p>Todos los derechos reservados - Ferreteria Codos ©</p>
+        </nav>
+    </footer>
+    <!-- Fin Footer -->
+    <script src="main.js"></script>
+</body>
+</html>

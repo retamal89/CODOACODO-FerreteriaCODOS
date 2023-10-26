@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos para el encabezado (header) */
 header {
     background-color: #bcbcbc;
     font-size: 22px;
@@ -23,6 +25,7 @@ header {
     color: #affc41;
 }
 
+/* Estilos para el menú de páginas */
 .menu-paginas {
     background-color: #c9c9c9;
     padding: 20px;
@@ -52,18 +55,20 @@ header {
     color: #0e34a0;
 }
 
+/* Estilos para el contenedor de la galería */
 .contenedor-galeria {
     position: relative;
 }
 
 .imagen-fondo {
-    width: 100%;
+    height: 100%;
     padding-top: 75%;
     background-image: url('./Images/inicio/Banner\ Ferreteria.png');
     background-size: cover;
     background-position: center;
 }
 
+/* Estilos para el pie de página (footer) */
 footer {
     background-color: #7b7263;
     font-size: 12px;
@@ -88,7 +93,7 @@ footer ul {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 12px; 
+    font-size: 12px;
     margin: 0 20px;
     display: inline-block;
 }
@@ -97,7 +102,7 @@ footer ul {
     margin-right: 5px;
 }
 
-
+/* Estilos para tamaños de pantalla específicos */
 @media (max-width: 768px) {
     header {
         font-size: 18px;
@@ -147,4 +152,102 @@ footer ul {
         font-size: 10px;
         margin: 0 3px;
     }
+}
+
+/* Estilos para la página de contacto */
+.contact-main {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #0e34a0;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0e2190;
+}
+
+.formulario input[type="reset"] {
+    background-color: #0e34a0;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario input[type="reset"]:hover {
+    background-color: #0e2190;
+}
+
+.contact0-titulo {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.formulario {
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario ul {
+    list-style: none;
+}
+
+.formulario li {
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+    background-color: #0e34a0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Estilos para el mapa de Google */
+iframe {
+    max-width: 100%;
+    height: auto;
 }

@@ -29,42 +29,43 @@
         </ul>
     </nav>
     <!-- Fin Menú de páginas -->
-    <main>
-        <h1>Contacto</h1>
+    <!-- Título "Contacto" debajo del menú de páginas y centrado -->
+    <h1 class="contacto-titulo">Contacto</h1>
+    <main class="contact-main">
         <section>
-            <h2>Envianos tu consulta</h2>
+            <h2>Envíanos tu consulta</h2>
             <form class="formulario" action="enviar.php" method="post" enctype="text/plain">
                 <ul>
                     <li>
-                        <label for="">Nombre</label>
-                        <input type="text" placeholder="Ingrese su nombre" required>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
                     </li>
                     <li>
-                        <label for="">Apellido</label>
-                        <input type="text" placeholder="Ingrese su apellido" required>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
                     </li>
                     <li>
-                        <label for="">E-Mail</label>
-                        <input type="email" placeholder="Ingrese su correo electronico" required>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="Ingrese su correo electrónico" required>
                     </li>
                     <li>
-                        <label for="">Telefono</label>
-                        <input type="number" placeholder="Ingrese su telefono" required>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Ingrese su teléfono" required>
                     </li>
                     <li>
-                        <label for="">Consulta</label>
-                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
+                        <label for="consulta">Consulta</label>
+                        <textarea id="consulta" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
                     </li>
                     <li>
-                    <input type="submit">
-                    <input type="reset" value="Borrar">
+                        <input type="submit">
+                        <input type="reset" value="Borrar">
                     </li>
                 </ul>
             </form>
         </section>
         <section>
             <h2>Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9424543992855!2d-58.59444182562833!3d-34.55501237297178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbbc4afda962b%3A0x3478a5c2e4e32829!2sAv.%20Eva%20Per%C3%B3n%206731%2C%20B1655CZO%20Loma%20Hermosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1690784104147!5m2!1ses-419!2sar" width="600" height="300" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Mapa del lugar"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11838.739214744455!2d-58.43508049606856!3d-34.6047755915408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698329747048!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <!-- Footer -->

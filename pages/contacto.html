@@ -29,19 +29,19 @@
         </ul>
     </nav>
     <!-- Fin Menú de páginas -->
-    <!-- Título "Contacto" debajo del menú de páginas y centrado -->
     <h1 class="contacto-titulo">Contacto</h1>
     <main class="contact-main">
         <section>
             <h2>Envíanos tu consulta</h2>
             <form class="formulario" action="enviar.php" method="post" enctype="text/plain">
+                <div id="errores-container"></div>
                 <ul>
                     <li>
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
                     </li>
                     <li>
-                        <label for="apellido">Apellido</label>
+                        <label for "apellido">Apellido</label>
                         <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
                     </li>
                     <li>
@@ -62,6 +62,7 @@
                     </li>
                 </ul>
             </form>
+            
         </section>
         <section>
             <h2>Ubicación</h2>

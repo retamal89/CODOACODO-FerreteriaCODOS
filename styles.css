@@ -55,7 +55,7 @@ header {
     color: #0e34a0;
 }
 
-/* Estilos para el contenedor de la galería */
+/* Estilos para el banner */
 .contenedor-galeria {
     position: relative;
 }
@@ -68,7 +68,7 @@ header {
     background-position: center;
 }
 
-/* Estilos para el pie de página (footer) */
+/* Estilos para el footer */
 footer {
     background-color: #7b7263;
     font-size: 12px;
@@ -152,7 +152,7 @@ h1 {
     color: #0e34a0;
 }
 
-/* Estilos para tamaños de pantalla específicos */
+/* Estilos para tamaños responsive */
 @media (max-width: 768px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
@@ -275,7 +275,7 @@ h1 {
     margin-right: 10px;
 }
 
-/* Estilos para el mapa de Google */
+/* mapa de Google */
 iframe {
     max-width: 100%;
     height: auto;
